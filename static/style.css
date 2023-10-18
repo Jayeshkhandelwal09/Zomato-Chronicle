@@ -1,0 +1,285 @@
+/* Import Montserrat font from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap');
+
+/* Body */
+body {
+    background: linear-gradient(to bottom, #222, #000);
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+/* Headings */
+/* Heading */
+h1 {
+    background: linear-gradient(to right, #ff6600, #ff9933); /* Linear gradient background */
+    -webkit-background-clip: text; /* Clip text to background */
+    color: transparent; /* Hide text color */
+    font-size: 36px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    margin-bottom: 20px;
+}
+
+/* Links */
+a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: #ff6600; /* Unique link color on hover */
+}
+
+/* Lists */
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    margin: 10px 0;
+}
+
+/* Forms */
+form {
+    margin: 20px 0;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #fff;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #fff;
+    background: rgba(255, 255, 255, 0.1); /* Slightly transparent white background */
+    color: #fff;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+input[type="submit"] {
+    background: #ff6600; /* Unique button background color */
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+input[type="submit"]:hover {
+    background: #ff9933; /* Darker button background color on hover */
+}
+
+/* Back to Menu link */
+p a {
+    color: #ff6600; /* Unique link color */
+}
+
+/* Header Styling */
+header {
+    background-color: #000;
+    padding: 10px;
+    text-align: center;
+    font-size: 24px;
+}
+
+/* Menu Styling */
+ul.menu {
+    text-align: center;
+}
+
+ul.menu li {
+    display: inline;
+    margin: 0 20px;
+}
+
+ul.menu a {
+    color: #ff6600; /* Unique link color */
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+ul.menu a:hover {
+    color: #ff9933; /* Unique link color on hover */
+}
+
+/* Unique Link Styles */
+ul li a {
+    color: #ff6600; /* Unique link color */
+    text-decoration: none;
+    font-weight: bold;
+    position: relative;
+    overflow: hidden;
+    font-family: 'Montserrat', sans-serif;
+}
+
+ul li a::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(to right, #ff6600, transparent); /* Unique gradient line under the link */
+    transform: scaleX(0); /* Initial scale to make it invisible */
+    transform-origin: right;
+    transition: transform 0.3s ease-in-out;
+}
+
+ul li a::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(to left, #ff6600, transparent); /* Unique gradient line under the link */
+    transform: scaleX(0); /* Initial scale to make it invisible */
+    transform-origin: left;
+    transition: transform 0.3s ease-in-out;
+}
+
+ul li a:hover::before {
+    transform: scaleX(1); /* Expand the line on hover from right to left */
+    transform-origin: left;
+}
+
+ul li a:hover::after {
+    transform: scaleX(1); /* Expand the line on hover from left to right */
+    transform-origin: right;
+}
+
+
+
+/* Menu List */
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+/* Menu Items */
+li {
+    margin: 10px 0;
+    background-color: #333;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Menu Item Text */
+strong {
+    color: #ff6600;
+}
+
+/* Price and Availability Styling */
+strong + span {
+    color: #fff;
+    font-weight: bold;
+}
+
+/* Availability Specific Styles */
+strong + span.availability-yes {
+    color: #00cc00; /* Green for available items */
+}
+
+strong + span.availability-no {
+    color: #cc0000; /* Red for not available items */
+}
+
+/* Style for input and select elements */
+input[type="text"],
+input[type="number"],
+select {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #666;
+    background-color: #111;
+    color: #fff;
+    font-size: 16px;
+    border-radius: 5px;
+    outline: none; /* Remove outline on focus */
+}
+
+/* Hover effect for input and select elements */
+input[type="text"]:hover,
+input[type="number"]:hover,
+select:hover {
+    background-color: #222;
+}
+
+/* Focus effect for input and select elements */
+input[type="text"]:focus,
+input[type="number"]:focus,
+select:focus {
+    background-color: #222;
+    border: 1px solid #ff6600; /* Highlight border on focus */
+}
+
+
+/* Form Styling */
+form {
+    margin: 20px 0;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #fff;
+    font-weight: bold;
+}
+
+/* Styling for the customer_name input */
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #fff;
+    background-color: #111;
+    color: #fff;
+    font-size: 16px;
+    border-radius: 5px;
+    outline: none;
+}
+
+/* Styling for the number input (for quantity) */
+input[type="number"] {
+    width: 70px; /* Adjust the width as needed */
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #fff;
+    background-color: #111;
+    color: #fff;
+    font-size: 16px;
+    border-radius: 5px;
+    outline: none;
+}
+
+/* Increase spacing between input and label */
+label, input[type="text"], input[type="number"] {
+    margin-bottom: 10px;
+}

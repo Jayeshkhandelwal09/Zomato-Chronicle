@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Menu</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>Menu</h1>
+    <ul>
+        {% for dish in menu %}
+        <li>
+            <strong>ID:</strong> {{ dish['id'] }}<br>
+            <strong>Name:</strong> {{ dish['name'] }}<br>
+            <strong>Price:</strong> ${{ dish['price'] }}<br>
+            <strong>Available:</strong> {% if dish['available'] %}Yes{% else %}No{% endif %}<br>
+        </li>
+        {% endfor %}
+    </ul>
+</body>
+</html>

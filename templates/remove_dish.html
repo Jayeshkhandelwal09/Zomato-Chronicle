@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Remove Dish</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>Remove Dish</h1>
+    <form method="POST">
+        <label for="dish_id_to_remove">Dish ID to Remove:</label>
+        <input type="text" id="dish_id_to_remove" name="dish_id_to_remove" required><br>
+        <input type="submit" value="Remove Dish">
+    </form>
+    <p><a href="{{ url_for('index') }}">Back to Menu</a></p>
+</body>
+</html>

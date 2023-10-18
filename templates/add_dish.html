@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Add Dish</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>Add Dish</h1>
+    <form method="POST">
+        <label for="dish_id">Dish ID:</label>
+        <input type="text" id="dish_id" name="dish_id" required><br>
+
+        <label for="dish_name">Dish Name:</label>
+        <input type="text" id="dish_name" name="dish_name" required><br>
+
+        <label for="dish_price">Dish Price:</label>
+        <input type="text" id="dish_price" name="dish_price" required><br>
+
+        <label for="dish_available">Available:</label>
+        <input type="checkbox" id="dish_available" name="available"><br>
+
+        <input type="submit" value="Add Dish">
+    </form>
+    <p><a href="{{ url_for('index') }}">Back to Menu</a></p>
+</body>
+</html>

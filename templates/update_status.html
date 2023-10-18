@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Update Order Status</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>Update Order Status</h1>
+    <form method="POST">
+        <label for="order_id_to_update">Order ID to Update:</label>
+        <input type="text" id="order_id_to_update" name="order_id_to_update" required><br>
+
+        <label for="new_status">New Status:</label>
+        <select id="new_status" name="new_status" required>
+            <option value="received">Received</option>
+            <option value="preparing">Preparing</option>
+            <option value="ready for pickup">Ready for Pickup</option>
+            <option value="delivered">Delivered</option>
+        </select><br>
+
+        <input type="submit" value="Update Status">
+    </form>
+    <p><a href="{{ url_for('review_all_orders') }}">Back to Orders</a></p>
+</body>
+</html>

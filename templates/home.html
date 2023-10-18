@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Welcome to Zesty Zomato</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>Welcome to Zesty Zomato</h1>
+    <p>Explore the following options:</p>
+    <ul>
+        <li><a href="{{ url_for('index') }}">View Menu</a></li>
+        <li><a href="{{ url_for('add_dish') }}">Add a Dish</a></li>
+        <li><a href="{{ url_for('remove_dish') }}">Remove a Dish</a></li>
+        <li><a href="{{ url_for('update_availability') }}">Update Dish Availability</a></li>
+        <li><a href="{{ url_for('take_order') }}">Take a New Order</a></li>
+        <li><a href="{{ url_for('update_order_status') }}">Update Order Status</a></li>
+        <li><a href="{{ url_for('review_all_orders') }}">Review All Orders</a></li>
+        <li><a href="{{ url_for('filter_orders_by_status') }}">Filter Orders by Status</a></li>
+    </ul>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Filter Orders by Status</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>Filter Orders by Status</h1>
+    <form method="POST">
+        <label for="status_to_filter">Status to Filter:</label>
+        <select id="status_to_filter" name="status_to_filter" required>
+            <option value="received">Received</option>
+            <option value="preparing">Preparing</option>
+            <option value="ready for pickup">Ready for Pickup</option>
+            <option value="delivered">Delivered</option>
+        </select><br>
+
+        <input type="submit" value="Filter Orders">
+    </form>
+    <p><a href="{{ url_for('index') }}">Back to Menu</a></p>
+</body>
+</html>
